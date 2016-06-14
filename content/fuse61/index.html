@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Red Hat JBoss Fuse 6.1 Product Presentation</title>
+
+    <meta name="description" content="A Fuse 6.1 reveal presentation">
+    <meta name="author" content="Keith Lynch">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="/css/reveal.css">
+    <link rel="stylesheet" href="/css/theme/simple.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="/lib/css/zenburn.css">
+
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        }
+    </script>
+
+    <!-- Live reload -->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+    <!--[if lt IE 9]>
+    <script src="/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+    <section data-background-size="contain" data-background="/content/common/img/bg_rh_mw_blue.png">
+        <h1>JBoss Fuse</h1>
+
+        <h3>An Introduction</h3>
+
+        <p>
+            <small>Created by Keith Lynch
+                from <a href="http://redhat.com/">Red Hat</a></small>
+        </p>
+    </section>
+
+    <section data-background-size="contain" data-background="/content/common/img/bg_rh_generic_white_content.png" data-markdown="/content/fuse61/markdown/agenda.md" data-separator="^\n---\n" data-vertical="^\n--\n"></section>
+    <section data-background-size="contain" data-background="/content/common/img/bg_rh_generic_white_content.png" data-markdown="/content/fuse61/markdown/goals.md" data-separator="^\n---\n" data-vertical="^\n--\n"></section>
+    <section data-background-size="contain" data-background="/content/common/img/bg_rh_generic_white_content.png" data-markdown="/content/fuse61/markdown/fuse.md" data-separator="^\n---\n" data-vertical="^\n--\n"></section>
+    <section data-background-size="contain" data-background="/content/common/img/bg_rh_generic_white_content.png" data-markdown="/content/fuse61/markdown/camel.md" data-separator="^\n---\n" data-vertical="^\n--\n"></section>
+    <section data-background-size="contain" data-background="/content/common/img/bg_rh_generic_white_content.png" data-markdown="/content/fuse61/markdown/fabric.md" data-separator="^\n---\n" data-vertical="^\n--\n"></section>
+    <section data-background-size="contain" data-background="/content/common/img/bg_rh_centred.jpg" data-markdown="/content/fuse61/markdown/thankyou.md" data-separator="^\n---\n" data-vertical="^\n--\n"></section>
+
+</div>
+
+</div>
+    <script src="/lib/js/head.min.js"></script>
+    <script src="/js/reveal.js"></script>
+
+    <script>
+
+        Reveal.initialize({
+            controls: false,
+            progress: true,
+            slideNumber: true,
+            history: true,
+            center: true,
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+
+                { src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: '/plugin/notes/notes.js' },
+                { src: '/plugin/zoom-js/zoom.js'}
+            ]
+        });
+
+    </script>
+    <!--
+        <div class="footer" class="share-reveal" style="position: absolute; bottom: 10px; left: 50%; margin-left: -200px; z-index: 20;">
+          <p>JEREMY BROWN &#8212; APRIL 2014</p>
+
+        </div>
+        -->
+
+</body>
+</html>
